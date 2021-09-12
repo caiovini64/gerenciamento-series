@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 
-namespace gerenciamento_series
+namespace gerenciamento_series.Interfaces
 {
-    interface IRepositorio<T>
+    public interface IRepositorio<T>
     {
         List<T> Lista();
         T RetornaPorId(int id);
-        void insere(T entidade);
+        void Insere(T entidade);
         void Exclui(int id);
         void Atualiza(int id, T entidade);
-        int proximoId();
+        int ProximoId();
 
     }
 }

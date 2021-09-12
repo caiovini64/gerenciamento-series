@@ -4,7 +4,7 @@ using System;
 
 namespace gerenciamento_series
 {
-    class Serie : EntidadeBase
+    public class Serie : EntidadeBase
     {
         private Genero Genero { get; set; }
         private string Titulo {  get; set; }
