@@ -13,13 +13,14 @@ namespace gerenciamento_series
 
         private bool Excluido { get; set; }
 
-        public Serie(Genero genero, string titulo, string descricao, int ano)
+        public Serie(Genero genero, string titulo, string descricao, int ano, int id)
         {
             this.Genero = genero;
             this.Titulo = titulo;
             this.Descricao = descricao;
             this.Ano = ano;
             this.Excluido = false;
+            this.Id = id;
         }
 
         public string retornaTitulo()
