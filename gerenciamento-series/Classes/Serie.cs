@@ -1,5 +1,5 @@
 ﻿
-
+using gerenciamento_series.Interfaces;
 using System;
 
 namespace gerenciamento_series
@@ -31,6 +31,11 @@ namespace gerenciamento_series
         public int retornaId()
         {
             return this.Id;
+        }
+
+        public bool retornaExcluido()
+        {
+            return this.Excluido;
         }
 
         public void Excluir()
